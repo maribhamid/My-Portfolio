@@ -1,0 +1,262 @@
+*{
+    /*color: #1a1c20;*/
+    background-color: #eeeff1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    max-width: 14000px;
+
+
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    color: #4a76ee;
+    text-decoration: none;
+}
+
+/*NavBar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+
+}
+nav .left a{
+    color: #1a1c20;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: #1a1c20;
+    margin: 0 10px;
+    font-size: 18px;
+}
+nav .right a span{
+    margin-left: 5px ;
+}
+/*Section1*/
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.intro .text{
+    flex: 5;
+}
+.intro .text h2{
+    font-size: 40px;
+}
+.intro .text    .links{
+    margin-top: 25px;
+}
+.intro .text    .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #4a76ee;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.intro .text .links a:hover{
+    color: #1a1c20;
+    border: 2px solid #1a1c20;
+}
+
+
+
+.intro .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.intro .headshot img{
+    border-radius: 50%;
+    width: 350px;
+}
+
+
+
+/*Section 2*/
+.skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills h2{
+    text-align: center;
+    font-size: 32px;
+}
+.skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills .cells{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.skills .cells .cell{
+    font-size: 30px;
+    padding: 8px 15px;
+    border: 2px solid #1a1c20;
+    margin-bottom: 20px;
+}
+.skills .cells .cell span{
+    font-size: 20px;
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+
+
+/*Section 3 Testimony*/
+.testimony{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.testimony h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.testimony .group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.testimony .group .details{
+    text-align: center;
+    flex: 2;
+}
+.testimony .group .text{
+    flex: 8;
+}
+.testimony .group .details img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimony .group .details .name{
+    font-weight: 800;
+}
+
+
+/*Section 4 Contact*/
+.contact{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact h2{
+    font-size: 35px;
+
+}
+.contact .group{
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    gap: 50px;
+}
+
+.contact .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact .group .form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact .group .form input,
+.contact .group .form textarea{
+    font-family: 'Poppins'sans-serif;
+    border: 2px solid #4a76ee;
+    background-color: #eeeff1;
+    padding: 10px;
+    margin: 15px;
+    outline: none;
+    resize: none;
+}
+.contact .group .form button{
+    font-size: 16px;
+    font-family: 'Poppins'sans-serif;
+    color: white;
+    background-color: #4a76ee;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact .group .form button:hover{
+    color: #4a76ee;
+    background-color: #eeeff1;
+    border: 2px solid #4a76ee;
+}
+
+
+
+
+
+@media (max-width: 600px){
+    /*NavBar*/
+    nav{
+        padding: 0 20px;
+    }
+    nav .right a span{
+        display: none;
+    }
+    nav .right a{
+        font-size: 35px;
+    }
+    /*Intro*/
+    .intro .text h2{
+        font-size: 25px;
+    }
+    .intro{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .intro .headshot img{
+        width: 300px;
+    }
+
+    /*Skills*/
+    .skills{
+        padding: 0 20px;
+    }
+    .skills .cells .cell{
+        font-size: 20px;
+    }
+    .skills .cells .cell span{
+        font-size: 16px;
+    }
+
+    /*Testimony*/
+    .testimony{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .testimony .group{
+        flex-direction: column;
+    }
+    /*Contact*/
+    .contact .group{
+        flex-direction: column;
+    }
+    .contact{
+        padding: 0 20px;
+    }
+}

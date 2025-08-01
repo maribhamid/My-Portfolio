@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Marib Hamid</title>
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <div class="left">
+        <a href="/">Marib Hamid</a>
+      </div>
+      <div class="right">
+        <a href="https://github.com/maribhamid" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i><span>Github</span></a
+        >
+        <a href="https://www.linkedin.com/in/marib-hamid-8a3914258/" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a
+        >
+        <a href="mailto:maribhamid098@gmail.com" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-solid fa-envelope"></i><span>Mail</span></a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!--Section 1 Intro-->
+      <section class="intro">
+        <div class="text">
+          <h2>Hi, i'm Marib</h2>
+          <p>
+            I'm a passionate Full Stack Developer specializing in building
+            modern, scalable web applications. With a strong foundation in both
+            front-end and back-end technologies, I love turning ideas into
+            clean, functional, and user-friendly digital experiences. Explore my
+            work, skills, and journey below.
+          </p>
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-kitchen-set"></i>
+              <span>S kills</span>
+            </a>
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i>
+              <span>Testimony</span>
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-address-book"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img src="./images/pfp.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--Section 2 Skills-->
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="text">As a Full Stack Developer, I work with a wide range of technologies to design, develop, and deploy efficient web applications. 
+My skill set spans both front-end and back-end development, including experience with modern frameworks, databases, APIs, and version control tools. 
+I’m always exploring new technologies to improve performance, scalability, and user experience.
+</p>
+        </div>
+        <div class="cells">
+          <div class="cell">
+            <i class="fa-brands fa-html5"></i><span>HTML</span>
+          </div>
+          <div class="cell">
+            <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
+          </div>
+          <div class="cell">
+            <i class="fa-brands fa-js"></i><span>JavaScript</span>
+          </div>
+          <div class="cell">
+            <i class="fa-brands fa-node"></i><span>Node.js</span>
+          </div>
+          <div class="cell">
+            <i class="fa-brands fa-react"></i><span>React</span>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3 Testimony-->
+      <section id="testimony" class="testimony">
+        <h2>Testimony</h2>
+
+        <div class="group">
+          <div class="details">
+            <img src="./images/PV Traders.png" alt="" />
+            <p class="name">PV Traders Team</p>
+            <p>Furniture & Household Goods Brand</p>
+          </div>
+          <div class="text">“Working with Marib was a fantastic experience. He understood our vision and translated it into a clean, professional, and user-friendly website that truly represents our brand. His attention to detail, responsiveness, and design sense exceeded our expectations. The new site has made it easier for customers to explore our product range, and we’ve seen a noticeable improvement in engagement. Highly recommended!”
+          </div>
+        </div>
+      </section>
+
+      <!--Section 4 Contact-->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In dolorem
+            quos libero nemo et soluta sint eveniet sunt eius officiis.
+          </div>
+          
+          <form class="form" action="https://api.web3forms.com/submit" method="POST">
+            <div class="form">
+          <input type="hidden" name="access_key" value="282e20c6-003b-432a-a9e1-53c1d5e2939b">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+            <button type="submit">Send Message</button>
+          
+          
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
